@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 import warnings
+
 warnings.filterwarnings('ignore')
 
 st.set_page_config(page_title="Excel 自動化報表生成器", layout="wide", page_icon="📊")
@@ -72,10 +73,3 @@ else:
     st.info("👆 請上傳檔案開始使用")
 
 st.caption("此專案用於學習與作品展示")
-                
-    except Exception as e:
-        st.error(f"讀取檔案失敗：{e}")
-else:
-    st.info("👆 請上傳 Excel 或 CSV 檔案開始使用")
-
-st.caption("此專案僅供學習與作品展示使用")
